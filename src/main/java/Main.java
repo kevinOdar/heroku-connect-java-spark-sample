@@ -17,7 +17,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
-    Spark.get("/hello", (req, res) -> "Hello World");
+    Spark.get("/hello", (req, res) -> "Hello dsds");
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
