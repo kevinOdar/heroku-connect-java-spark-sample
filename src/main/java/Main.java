@@ -19,7 +19,7 @@ public class Main {
 
     Spark.get("/hello", (req, res) -> "Hello dsds");
 
-    get("/", (request, response) -> {
+    Spark.get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
@@ -52,7 +52,7 @@ public class Main {
       }
     }, new FreeMarkerEngine());
     
-    get("/contacts", (req, res) -> {
+    Spark.get("/contacts", (req, res) -> {
         Connection connection = null;
         Map<String, Object> attributes = new HashMap<>();
         try {
