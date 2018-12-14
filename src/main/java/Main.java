@@ -23,7 +23,7 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
-            return new ModelAndView(attributes, "inicio.hbs");
+            return new ModelAndView(attributes, "inicio.html");
         }, new FreeMarkerEngine());
 
     Spark.get("/db", (req, res) -> {
